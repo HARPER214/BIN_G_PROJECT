@@ -1,49 +1,49 @@
 package com.bing.community.model.dto;
 
 public class Location {
-	private int id;
-	private String title;
-	private String 위도;
-	private String 경도;
+	private int location_id;
+	private String locationame;
+	private String longitude;
+	private String latitude;
 
-	public Location(int id, String title, String 위도, String 경도) {
+	public Location(int location_id, String locationame, String longitude, String latitude) {
 		super();
-		this.id = id;
-		this.title = title;
-		this.위도 = 위도;
-		this.경도 = 경도;
+		this.location_id = location_id;
+		this.locationame = locationame;
+		this.longitude = longitude;
+		this.latitude = latitude;
 	}
 
-	public int getId() {
-		return id;
+	public int getLocation_id() {
+		return location_id;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setLocation_id(int location_id) {
+		this.location_id = location_id;
 	}
 
-	public String getTitle() {
-		return title;
+	public String getLocationame() {
+		return locationame;
 	}
 
-	public void setTitle(String title) {
-		this.title = title;
+	public void setLocationame(String locationame) {
+		this.locationame = locationame;
 	}
 
-	public String get위도() {
-		return 위도;
+	public String getLongitude() {
+		return longitude;
 	}
 
-	public void set위도(String 위도) {
-		this.위도 = 위도;
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
 	}
 
-	public String get경도() {
-		return 경도;
+	public String getLatitude() {
+		return latitude;
 	}
 
-	public void set경도(String 경도) {
-		this.경도 = 경도;
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
 	}
 
 }
