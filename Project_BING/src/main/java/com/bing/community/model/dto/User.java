@@ -3,18 +3,18 @@ package com.bing.community.model.dto;
 public class User {
 	private int id;
 	private String email;
-	private String password;
+	private String pw;
 	private int height;
 	private int weight;
 	private String name;
 	private int age;
 	private String gender;
 
-	public User(int id, String email, String password, int height, int weight, String name, int age, String gender) {
+	public User(int id, String email, String pw, int height, int weight, String name, int age, String gender) {
 		super();
 		this.id = id;
 		this.email = email;
-		this.password = password;
+		this.pw = pw;
 		this.height = height;
 		this.weight = weight;
 		this.name = name;
@@ -39,11 +39,11 @@ public class User {
 	}
 
 	public String getPassword() {
-		return password;
+		return pw;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public void setPassword(String pw) {
+		this.pw = pw;
 	}
 
 	public int getHeight() {

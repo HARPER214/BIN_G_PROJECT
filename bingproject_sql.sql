@@ -16,7 +16,7 @@ select * from user;
 
 create table location(
 location_id INT(10) AUTO_INCREMENT PRIMARY KEY NOT NULL,  
-locationName VARCHAR(100) NOT NULL,
+location_name VARCHAR(100) NOT NULL,
 longitude DECIMAL(10,7) NOT NULL,
 latitude DECIMAL(10,7) NOT NULL
 );
@@ -29,7 +29,7 @@ num INT(10) NOT NULL,
 title VARCHAR(100) NOT NULL,
 writer VARCHAR(100) NOT NULL,
 content TEXT NOT NULL,
-reg_date DATE NOT NULL,
+reg_date DATE DEFAULT CURRENT_TIMESTAMP,
 is_modified TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 location_id INT(10) NOT NULL,
 FOREIGN KEY(location_id) REFERENCES location(location_id)

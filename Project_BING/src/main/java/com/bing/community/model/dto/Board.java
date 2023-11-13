@@ -1,20 +1,20 @@
 package com.bing.community.model.dto;
 
 public class Board {
-	private int id;
+	private int board_id;
 	private int community_id;
 	private int num;
 	private String title;
 	private String writer;
 	private String content;
 	private String reg_date;
-	private boolean is_modified;
+	private String is_modified;
 	private int location_id;
 
-	public Board(int id, int community_id, int num, String title, String writer, String content, String reg_date,
-			boolean is_modified, int location_id) {
+	public Board(int board_id, int community_id, int num, String title, String writer, String content, String reg_date,
+			String is_modified, int location_id) {
 		super();
-		this.id = id;
+		this.board_id = board_id;
 		this.community_id = community_id;
 		this.num = num;
 		this.title = title;
@@ -25,12 +25,12 @@ public class Board {
 		this.location_id = location_id;
 	}
 
-	public int getId() {
-		return id;
+	public int getBoard_id() {
+		return board_id;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setBoard_id(int board_id) {
+		this.board_id = board_id;
 	}
 
 	public int getCommunity_id() {
@@ -81,11 +81,11 @@ public class Board {
 		this.reg_date = reg_date;
 	}
 
-	public boolean isIs_modified() {
+	public String isIs_modified() {
 		return is_modified;
 	}
 
-	public void setIs_modified(boolean is_modified) {
+	public void setIs_modified(String is_modified) {
 		this.is_modified = is_modified;
 	}
 
