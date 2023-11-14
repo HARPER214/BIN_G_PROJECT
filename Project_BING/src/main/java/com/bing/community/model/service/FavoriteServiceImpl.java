@@ -1,5 +1,5 @@
 package com.bing.community.model.service;
 
-public class LikeServiceImpl {
+public class FavoriteServiceImpl {
 
 }
