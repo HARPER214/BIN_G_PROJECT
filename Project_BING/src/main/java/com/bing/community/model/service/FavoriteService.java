@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.bing.community.model.dto.Favorite;
 
-public interface LikeService {
+public interface FavoriteService {
 	// 해당 유저의 찜 목록 조회
 	List<Favorite> getLikeList(int userId);
 	

@@ -1,7 +1,7 @@
 package com.bing.community.model.dto;
 
 public class User {
-	private int id;
+	private int id; // 쓸수도, 안쓸수도
 	private String email;
 	private String pw;
 	private int height;
