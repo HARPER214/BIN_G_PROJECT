@@ -4,6 +4,7 @@ public class Board {
 	private int board_id;
 	private int community_id;
 	private int num;
+	private int viewCnt;
 	private String header;
 	private String title;
 	private String writer;
@@ -12,12 +13,13 @@ public class Board {
 	private String is_modified;
 	private int location_id;
 
-	public Board(int board_id, int community_id, int num, String header, String title, String writer, String content,
-			String reg_date, String is_modified, int location_id) {
+	public Board(int board_id, int community_id, int num, int viewCnt, String header, String title, String writer,
+			String content, String reg_date, String is_modified, int location_id) {
 		super();
 		this.board_id = board_id;
 		this.community_id = community_id;
 		this.num = num;
+		this.viewCnt = viewCnt;
 		this.header = header;
 		this.title = title;
 		this.writer = writer;
@@ -49,6 +51,14 @@ public class Board {
 
 	public void setNum(int num) {
 		this.num = num;
+	}
+
+	public int getViewCnt() {
+		return viewCnt;
+	}
+
+	public void setViewCnt(int viewCnt) {
+		this.viewCnt = viewCnt;
 	}
 
 	public String getHeader() {

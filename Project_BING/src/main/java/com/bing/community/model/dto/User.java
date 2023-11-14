@@ -4,22 +4,23 @@ public class User {
 	private int id; // 쓸수도, 안쓸수도
 	private String email;
 	private String pw;
+	private String name;
+	private String gender;
+	private String nickname;
 	private int height;
 	private int weight;
-	private String name;
-	private int age;
-	private String gender;
 
-	public User(int id, String email, String pw, int height, int weight, String name, int age, String gender) {
+	public User(int id, String email, String pw, String name, String gender, String nickname, int height,
+			int weight) {
 		super();
 		this.id = id;
 		this.email = email;
 		this.pw = pw;
+		this.name = name;
+		this.gender = gender;
+		this.nickname = nickname;
 		this.height = height;
 		this.weight = weight;
-		this.name = name;
-		this.age = age;
-		this.gender = gender;
 	}
 
 	public int getId() {
@@ -38,12 +39,36 @@ public class User {
 		this.email = email;
 	}
 
-	public String getPassword() {
+	public String getPw() {
 		return pw;
 	}
 
-	public void setPassword(String pw) {
+	public void setPw(String pw) {
 		this.pw = pw;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public String getNickname() {
+		return nickname;
+	}
+
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
 	}
 
 	public int getHeight() {
@@ -60,30 +85,6 @@ public class User {
 
 	public void setWeight(int weight) {
 		this.weight = weight;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public int getAge() {
-		return age;
-	}
-
-	public void setAge(int age) {
-		this.age = age;
-	}
-
-	public String getGender() {
-		return gender;
-	}
-
-	public void setGender(String gender) {
-		this.gender = gender;
 	}
 
 }

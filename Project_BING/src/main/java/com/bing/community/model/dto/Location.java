@@ -2,14 +2,14 @@ package com.bing.community.model.dto;
 
 public class Location {
 	private int location_id;
-	private String locationame;
+	private String location_name;
 	private String longitude;
 	private String latitude;
 
-	public Location(int location_id, String locationame, String longitude, String latitude) {
+	public Location(int location_id, String location_name, String longitude, String latitude) {
 		super();
 		this.location_id = location_id;
-		this.locationame = locationame;
+		this.location_name = location_name;
 		this.longitude = longitude;
 		this.latitude = latitude;
 	}
@@ -22,12 +22,12 @@ public class Location {
 		this.location_id = location_id;
 	}
 
-	public String getLocationame() {
-		return locationame;
+	public String getLocation_name() {
+		return location_name;
 	}
 
-	public void setLocationame(String locationame) {
-		this.locationame = locationame;
+	public void setLocation_name(String location_name) {
+		this.location_name = location_name;
 	}
 
 	public String getLongitude() {
